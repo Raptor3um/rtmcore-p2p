@@ -1,7 +1,7 @@
 {
-  "name": "ravencore-p2p",
+  "name": "rtmcore-p2p",
   "version": "1.0.0",
-  "description": "Interface to the ravencoin P2P network for ravencore",
+  "description": "Interface to the raptoreum P2P network for rtmcore",
   "author": "Under",
   "main": "index.js",
   "scripts": {
@@ -11,21 +11,21 @@
     "build": "gulp"
   },
   "keywords": [
-    "ravencoin",
-    "ravencore"
+    "raptoreum",
+    "rtmcore"
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/underdarkskies/ravencore-p2p.git"
+    "url": "https://github.com/Raptor3um/rtmcore-p2p.git"
   },
   "dependencies": {
-    "ravencore-lib": "underdarkskies/ravencore-lib",
+    "rtmcore-lib": "Raptor3um/rtmcore-lib",
     "bloom-filter": "^0.2.0",
-    "buffers": "underdarkskies/node-buffers",
+    "buffers": "Raptor3um/node-buffers",
     "socks5-client": "^0.3.6"
   },
   "devDependencies": {
-    "ravencore-build": "underdarkskies/ravencore-build",
+    "rtmcore-build": "Raptor3um/rtmcore-build",
     "brfs": "^1.2.0",
     "chai": "~1.10.0",
     "gulp": "^3.8.10",

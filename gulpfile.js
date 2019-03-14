@@ -1,8 +1,8 @@
 'use strict';
 
 var gulp = require('gulp');
-var ravencoreTasks = require('ravencore-build');
+var rtmcoreTasks = require('rtmcore-build');
 
-ravencoreTasks('p2p', {skipBrowser: true});
+rtmcoreTasks('p2p', {skipBrowser: true});
 
 gulp.task('default', ['lint', 'coverage']);

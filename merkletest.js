@@ -1,7 +1,7 @@
-let Pool = require('ravencore-p2p').Pool;
-let BloomFilter = require('ravencore-p2p').BloomFilter;
-let NetworksData = require('ravencore-lib').Networks;
-let Messages = require('ravencore-p2p').Messages;
+let Pool = require('rtmcore-p2p').Pool;
+let BloomFilter = require('rtmcore-p2p').BloomFilter;
+let NetworksData = require('rtmcore-lib').Networks;
+let Messages = require('rtmcore-p2p').Messages;
 
 let network = 'livenet';  // Network can be livenet or testnet
 let txs = []; // Here we store the transactions
@@ -17,11 +17,11 @@ let data = {
 let pool = new Pool({network: NetworksData[network]});
 pool.connect();
 
-// Create a filter and a ravencoin message with the filter
+// Create a filter and a raptoreum message with the filter
 let filter = BloomFilter.create(1000, 0.1).insert(new Buffer(data.code, data.format));
 let filterLoad = new Messages({network: NetworksData[network]}).FilterLoad(filter);
 
-// Create a ravencoin message for require a merkleblock
+// Create a raptoreum message for require a merkleblock
 let blockHashRequested = '000000000002fbc104e2ab07f7fe04c83be0578fdbc59b23e0e51e977cdaa584';
 let getDataForFilteredBlock = new Messages({network: NetworksData[network]}).GetData.forFilteredBlock(blockHashRequested);
 

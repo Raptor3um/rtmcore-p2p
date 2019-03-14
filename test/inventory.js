@@ -4,12 +4,12 @@
 
 var should = require('chai').should();
 
-var ravencore = require('ravencore-lib');
+var rtmcore = require('rtmcore-lib');
 var P2P = require('../');
 var Inventory = P2P.Inventory;
-var BufferUtils = ravencore.util.buffer;
-var BufferWriter = ravencore.encoding.BufferWriter;
-var BufferReader = ravencore.encoding.BufferReader;
+var BufferUtils = rtmcore.util.buffer;
+var BufferWriter = rtmcore.encoding.BufferWriter;
+var BufferReader = rtmcore.encoding.BufferReader;
 
 describe('Inventory', function() {
 

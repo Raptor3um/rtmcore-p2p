@@ -1,4 +1,4 @@
-var ravencore = require('ravencore-lib');
-ravencore.P2P = require('./lib');
+var rtmcore = require('rtmcore-lib');
+rtmcore.P2P = require('./lib');
 
-module.exports = ravencore.P2P;
+module.exports = rtmcore.P2P;
